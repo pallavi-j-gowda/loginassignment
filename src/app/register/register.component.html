@@ -1,0 +1,25 @@
+<div class="registerationFromBox">
+  <div class="registerationFormContent">
+    <div class="userIcon"></div>
+    <div class="formHeader"><h3>REGISTER HERE</h3></div>
+    <div class="registerationInputFields"><span>{{errormsg}}</span></div>
+  <div class="registerationInputFields">
+      <div class="registerationLabel"><label class="">NAME</label></div>
+      <div class="registerationInput"><input type="text" [(ngModel)]="user.username"></div>
+    </div>
+  <div class="registerationInputFields">
+    <div class="registerationLabel"><label>EMAIL</label></div>
+      <div class="registerationInput"><input type="email" [(ngModel)]="user.email"></div>
+  </div>
+  
+  <div class="registerationInputFields">
+    <div class="registerationLabel"><label>PASSWORD</label></div>
+      <div class="registerationInput"><input type="password" [(ngModel)]="user.password"></div>
+  </div>
+  <div class="registerationInputFields">
+    <button (click)='onsubmit()'>REGISTER</button>
+    <button routerLink="/login">LOGIN</button>
+  </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

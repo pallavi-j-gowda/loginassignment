@@ -1,0 +1,21 @@
+<div class="loginFromBox">
+  <div class="loginFormContent">
+    <div class="userIcon"></div>
+    <div class="formHeader"><h3>LOGIN HERE</h3></div>
+    <div class="loginInputFields"><span>{{errormsg}}</span></div>
+  <div class="loginInputFields">
+      <div class="loginLabel"><label class="">USER NAME</label></div>
+      <div class="loginInput"><input type="text" [(ngModel)]="user.username"></div>
+    </div>
+  
+  <div class="loginInputFields">
+    <div class="loginLabel"><label>PASSWORD</label></div>
+      <div class="loginInput"><input type="password" [(ngModel)]="user.password"></div>
+  </div>
+  <div class="loginInputFields">
+    <br>
+    <button (click)='onsubmit(user.username,user.password)'>LOGIN</button>
+  </div>
+  </div>
+</div>
+

@@ -1,0 +1,22 @@
+
+<div class="userDetailsBox">
+    <div class="userDetailsContent">
+        <div class="userIcon"></div>
+        <div class="userDetailsfields">
+            <div class="userDetailsLabel"><h2>NAME</h2>
+                <input class="userDetailsInfo" type="text" [(ngModel)]="user.username" readonly></div>
+        </div>
+        <div class="userDetailsfields">
+            <div class="userDetailsLabel"><h2>E-MAIL</h2>
+                <input class="userDetailsInfo" type="email" [(ngModel)]="user.email" readonly></div>
+        </div>
+        <div class="userDetailsfields">
+            <div class="userDetailsLabel"><h2>PASSWORD</h2>
+                <input class="userDetailsInfo" type="password" [(ngModel)]="user.password" readonly></div>
+        </div>
+        <div class="userDetailsfields">
+            <br>
+            <button routerLink="/" >LOGOUT</button>
+          </div>
+    </div>
+</div>
